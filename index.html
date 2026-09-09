@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buzenval — Un village à découvrir</title>
+  <meta name="description" content="Prototype de la landing page de Buzenval.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header" id="top">
+    <a href="#top" class="brand" aria-label="Accueil Buzenval">
+      <span class="brand-mark">B</span>
+      <span>Armoiries de<br>Buzenval</span>
+    </a>
+
+    <nav class="main-nav" aria-label="Navigation principale">
+      <a href="#histoire">Histoire</a>
+      <a href="#vignes">Vignes</a>
+      <a href="#vie-locale">Vie locale</a>
+      <a href="#agenda">Agenda</a>
+    </nav>
+
+    <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-photo" role="img" aria-label="Emplacement prévu pour une photographie authentique de Buzenval">
+        <div class="photo-note">
+          <span class="photo-icon">⌁</span>
+          <span>Photo authentique de Buzenval<br><small>à intégrer dans la version finale</small></span>
+        </div>
+      </div>
+
+      <div class="hero-content">
+        <div class="eyebrow">Garches · Rueil-Malmaison</div>
+        <h1>Buzenval</h1>
+        <p class="hero-tagline">Bien plus qu’un quartier, un village.</p>
+        <a class="primary-button" href="#decouvrir">Découvrir Buzenval <span>→</span></a>
+      </div>
+
+      <div class="coat-card">
+        <img src="assets/armoiries-buzenval.jpg" alt="Armoiries de Buzenval">
+        <span>Les armoiries de Buzenval</span>
+      </div>
+    </section>
+
+    <section class="news-band" aria-label="Actualités">
+      <div class="news-dot"></div>
+      <span>Bandeau d’actualités</span>
+      <strong>À découvrir bientôt</strong>
+    </section>
+
+    <section class="univers" id="decouvrir">
+      <div class="section-heading">
+        <span class="eyebrow">Explorer le territoire</span>
+        <h2>Un territoire, plusieurs histoires.</h2>
+        <p>Découvrez les lieux, les personnes, les savoir-faire et les événements qui font vivre Buzenval.</p>
+      </div>
+
+      <div class="cards">
+        <a class="topic-card" id="histoire" href="#gazette">
+          <span class="topic-number">01</span>
+          <div class="topic-icon">✦</div>
+          <h3>Histoire</h3>
+          <p>Patrimoine, mémoire et histoires de Buzenval.</p>
+          <span class="card-link">Explorer →</span>
+        </a>
+
+        <a class="topic-card grape" id="vignes" href="#gazette">
+          <span class="topic-number">02</span>
+          <div class="topic-icon">🍇</div>
+          <h3>Vignes</h3>
+          <p>Le vignoble, les vendanges et les traditions locales.</p>
+          <span class="card-link">Découvrir →</span>
+        </a>
+
+        <a class="topic-card" id="vie-locale" href="#gazette">
+          <span class="topic-number">03</span>
+          <div class="topic-icon">⌂</div>
+          <h3>Vie locale</h3>
+          <p>Commerces, artisans, associations et marché.</p>
+          <span class="card-link">Voir la vie locale →</span>
+        </a>
+
+        <a class="topic-card red" id="agenda" href="#gazette">
+          <span class="topic-number">04</span>
+          <div class="topic-icon">●</div>
+          <h3>Événements</h3>
+          <p>Les rendez-vous qui rythment la vie du territoire.</p>
+          <span class="card-link">Voir l’agenda →</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="gazette" id="gazette">
+      <div class="gazette-decoration">
+        <span>LA GAZETTE</span>
+        <span>BUZENVAL</span>
+      </div>
+
+      <div class="gazette-content">
+        <span class="eyebrow">Rester connecté au territoire</span>
+        <h2>La Gazette de Buzenval</h2>
+        <p>Les actualités, histoires et événements de votre territoire, directement dans votre boîte mail.</p>
+
+        <form class="newsletter-form" id="newsletter-form">
+          <label class="sr-only" for="email">Votre adresse e-mail</label>
+          <input id="email" name="email" type="email" placeholder="Votre e-mail" required>
+          <button type="submit">S’inscrire <span>→</span></button>
+        </form>
+
+        <p class="prototype-note">Prototype : aucune donnée n’est envoyée.</p>
+        <p class="form-message" id="form-message" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <span class="brand-mark small">B</span>
+      <strong>Buzenval</strong>
+    </div>
+    <p>Un village à découvrir.</p>
+    <p class="copyright">Fait par Aminum · 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
